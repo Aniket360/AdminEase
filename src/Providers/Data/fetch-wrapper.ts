@@ -14,7 +14,7 @@ const customFectch = async (url: string, option: RequestInit) => {
         ...option,
         headers: {
             ...headers,
-            Authorization: headers?.Authorization || `bearer.${accessToken}`,
+            Authorization: headers?.Authorization || `Bearer ${accessToken}`,
 
             "Content-Type": "application/json",
 
